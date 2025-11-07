@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#front{
+    background-color: grey;
+    z-index: 10;
+    position: absolute;
+    border-radius: 5%;
+    left: 40%;
+    padding: 50px;
+    display: inline-block;
+    text-align: left;
+    border: 2px solid white;
+    margin-top: 10%;
+}
+
+button{
+    padding: 10px;
+    background-color: lightgreen;
+    border: 3px solid white;
+    border-radius: 20%;
+}

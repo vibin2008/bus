@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Ticket Booking
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <link rel="stylesheet" href="style.css">
+        <h1>Get your Tickets Now!</h1>
+        <h3>Please provide the information given below</h3>
+        <hr>
+        <br>
+        <div id="back"></div>
+        <center>
+            <div id="front">
+                <h3>The Ticket Price is:</h3>
+                <center>
+                    <button onclick="pay()">
+                        Pay
+                    </button>
+                </center></div>
+        </center>
+        <div id="form">
+            Bus Route:
+            <select name="route" id="route" onchange="get()">
+                <option value="s2c" selected>Salem to Coimbatore</option>
+                <option value="s2e">Salem to Erode</option>
+            </select>
+            <br>
+
+            From:
+            <select name="from" id="from">
+            </select>
+            <br>
+            To:
+            <select name="To" id="to">
+            </select>
+            <center>
+                <button id="ok" onclick="check()">OK</button>
+            </center>
+
+        </div>
+        
+        <script src="java.js"></script>
+
+        
+    </body>
+</html>

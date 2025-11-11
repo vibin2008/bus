@@ -74,8 +74,8 @@ function check(){
 }
 
 function pay(){
-    var frm = a.textContent
-    var too = b.textContent
+    let frm = a.options[a.selectedIndex].textContent;
+    var too = b.options[b.selectedIndex].textContent;
      fetch("https://ayla-ropier-consuela.ngrok-free.dev/pay", {
     method: "POST",
     headers: { "Content-Type": "application/json" },

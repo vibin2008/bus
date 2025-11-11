@@ -19,7 +19,7 @@ function get(){
     a.innerHTML = ""
     b.innerHTML = ""
     
-fetch("http://127.0.0.1:5000/stop", {
+fetch("https://ayla-ropier-consuela.ngrok-free.dev/stop", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ table: stp.value})
@@ -74,7 +74,7 @@ function check(){
 }
 
 function pay(){
-     fetch("http://127.0.0.1:5000/pay", {
+     fetch("https://ayla-ropier-consuela.ngrok-free.dev/pay", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ price: Number(price),from: Number(a),to: Number(b)})

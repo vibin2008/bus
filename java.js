@@ -6,6 +6,8 @@ var b = document.getElementById("to")
 var c = document.getElementById("front")
 var d = document.getElementById("back")
 var stp = document.getElementById("route")
+var frm = a.textContent
+var too = b.textContent
 
 
 window.onload = function() {
@@ -77,7 +79,7 @@ function pay(){
      fetch("https://ayla-ropier-consuela.ngrok-free.dev/pay", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ price: Number(price),from: Number(a),to: Number(b)})
+    body: JSON.stringify({ price: Number(price),from: frm,to: too})
   })
     .then(res => res.json())
     .then(data => 

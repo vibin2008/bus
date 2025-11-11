@@ -45,6 +45,7 @@ select{
     z-index: 10;
     position: absolute;
     border-radius: 5%;
+    left: 30%;
     padding: 50px;
     display: none;
     text-align: left;

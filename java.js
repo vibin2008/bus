@@ -6,8 +6,6 @@ var b = document.getElementById("to")
 var c = document.getElementById("front")
 var d = document.getElementById("back")
 var stp = document.getElementById("route")
-var frm = a.textContent
-var too = b.textContent
 
 
 window.onload = function() {
@@ -76,6 +74,8 @@ function check(){
 }
 
 function pay(){
+    var frm = a.textContent
+    var too = b.textContent
      fetch("https://ayla-ropier-consuela.ngrok-free.dev/pay", {
     method: "POST",
     headers: { "Content-Type": "application/json" },

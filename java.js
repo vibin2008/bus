@@ -8,13 +8,6 @@ var d = document.getElementById("back")
 var stp = document.getElementById("route")
 
 
-window.onload = function() {
-  stp.value = "s2c";
-  get(); 
-};
-
-
-
 function get(){
     a.innerHTML = ""
     b.innerHTML = ""

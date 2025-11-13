@@ -19,7 +19,7 @@ function get(){
     a.innerHTML = ""
     b.innerHTML = ""
     
-fetch("https://busticket-backend-c5dy.onrender.com/stop", {
+fetch("https://ayla-ropier-consuela.ngrok-free.dev/stop", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ table: stp.value})
@@ -76,7 +76,7 @@ function check(){
 function pay(){
     let frm = a.options[a.selectedIndex].textContent;
     var too = b.options[b.selectedIndex].textContent;
-     fetch("https://busticket-backend-c5dy.onrender.com/pay", {
+     fetch("https://ayla-ropier-consuela.ngrok-free.dev/pay", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ price: Number(price),from: frm,to: too})

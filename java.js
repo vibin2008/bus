@@ -7,6 +7,10 @@ var c = document.getElementById("front")
 var d = document.getElementById("back")
 var stp = document.getElementById("route")
 
+window.onload = function() {
+    const params = new URLSearchParams(window.location.search);
+    const route = params.get("route");
+}
 
 function get(){
     a.innerHTML = ""

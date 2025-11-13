@@ -13,6 +13,7 @@ window.onload = function() {
     if (route){
         stp.value = route
     }
+    get()
 }
 
 function get(){

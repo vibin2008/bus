@@ -19,7 +19,7 @@ function get(){
     a.innerHTML = ""
     b.innerHTML = ""
     
-fetch("https://ayla-ropier-consuela.ngrok-free.dev/stop", {
+fetch("https://web-production-5dd66.up.railway.app/stop", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ table: stp.value})
@@ -76,7 +76,7 @@ function check(){
 function pay(){
     let frm = a.options[a.selectedIndex].textContent;
     var too = b.options[b.selectedIndex].textContent;
-     fetch("https://ayla-ropier-consuela.ngrok-free.dev/pay", {
+     fetch("https://web-production-5dd66.up.railway.app/pay", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ price: Number(price),from: frm,to: too})

@@ -10,6 +10,9 @@ var stp = document.getElementById("route")
 window.onload = function() {
     const params = new URLSearchParams(window.location.search);
     const route = params.get("route");
+    if (route){
+        stp.value = route
+    }
 }
 
 function get(){
